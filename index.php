@@ -19,7 +19,7 @@
     <main>
     <?php
     foreach ($response as $key => $values) {?>
-        <img src="<?php echo $values['poster']; ?>" alt="">
+        <img src="<?php echo $values['poster']; ?>" alt="<?php echo $values['title']; ?>">
         <h2><?php echo $values['title']; ?></h2>
         <p><?php echo $values['author']; ?></p>
         <p><?php echo $values['genre']; ?></p>
