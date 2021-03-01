@@ -8,11 +8,32 @@ body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
 }
+body::-webkit-scrollbar-track {
+  background: #cecece;
+  border: 1px solid #000;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb {
+  background: #1ed760;
+  height: 70px;
+  border-radius: 10px;
+}
+body::-webkit-scrollbar-thumb:hover {
+  background: #2e3a46;
+}
+body::-webkit-scrollbar {
+  width: 5px;
+  height: 4px;
+}
 
 header {
   width: 100%;
   height: 70px;
   background-color: #2e3a46;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1;
 }
 header .container {
   max-width: 1170px;
@@ -36,7 +57,7 @@ header .box-text {
 main {
   width: 100%;
   height: 100%;
-  padding: 100px 0;
+  padding: 140px 0 100px;
   background-color: #1E2D3B;
 }
 main .container {
@@ -68,7 +89,6 @@ main .box-album .box-item-album {
 main .box-album .box-item-album .box-img {
   width: 100%;
   height: 200px;
-  background-color: red;
 }
 main .box-album .box-item-album .box-img img {
   width: 100%;
@@ -88,8 +108,35 @@ main .box-album .box-item-album .box-info p {
 
 footer {
   width: 100%;
-  height: 50px;
-  background-color: #cecece;
+  height: 60px;
+  background-color: #2e3a46;
+}
+footer .container {
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+}
+footer .footer-box {
+  height: 100%;
+  color: #1ed760;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+footer .footer-box .box-left ul {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  list-style: none;
+}
+footer .footer-box .box-left ul li a {
+  color: #1ed760;
+  margin-right: 15px;
+  text-decoration: none;
 }
 
 .m-t-10 {

@@ -1,7 +1,7 @@
 main{
     width: $widthAll;
     height: $heightAll;
-    padding: 100px 0;
+    padding: 140px 0 100px;
     background-color: $darkBlue;
     @include container;
     .box-album{
@@ -18,7 +18,6 @@ main{
             .box-img{
                 width: $widthAll;
                 height: 200px;
-                background-color: red;
                 img{
                     width: $widthAll;
                     height: $heightAll;
@@ -27,9 +26,6 @@ main{
             .box-title{
                 width: $widthAll;
                 color: $lightGrey;
-                h2{
-                    // font-size: 1.2em;
-                }
             }
             .box-info{
                 width: $widthAll;
