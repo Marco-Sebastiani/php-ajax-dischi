@@ -7,7 +7,89 @@
 body {
   font-size: 16px;
   font-family: "Roboto", sans-serif;
-  background-color: aqua;
+}
+
+header {
+  width: 100%;
+  height: 70px;
+  background-color: #2e3a46;
+}
+header .container {
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+}
+header .box-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+header img {
+  height: 50px;
+}
+header .box-text {
+  color: #adff2f;
+}
+
+main {
+  width: 100%;
+  height: 100%;
+  padding: 100px 0;
+  background-color: #1E2D3B;
+}
+main .container {
+  max-width: 1170px;
+  height: 100%;
+  margin: 0 auto;
+}
+main .box-album {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  flex-direction: row;
+}
+main .box-album .box-item-album {
+  width: 260px;
+  height: 400px;
+  color: #fff;
+  text-align: center;
+  margin: 15px 15px;
+  padding: 20px;
+  background-color: #000;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: column;
+}
+main .box-album .box-item-album .box-img {
+  width: 100%;
+  height: 200px;
+  background-color: red;
+}
+main .box-album .box-item-album .box-img img {
+  width: 100%;
+  height: 100%;
+}
+main .box-album .box-item-album .box-title {
+  width: 100%;
+  color: #cecece;
+}
+main .box-album .box-item-album .box-info {
+  width: 100%;
+  margin: 20px 0;
+}
+main .box-album .box-item-album .box-info p {
+  line-height: 2;
+}
+
+footer {
+  width: 100%;
+  height: 50px;
+  background-color: #cecece;
 }
 
 .m-t-10 {

@@ -1,0 +1,16 @@
+header{
+    width: $widthAll;
+    height: $headerHeight;
+    background-color: $darkGray;
+    @include container;
+    .box-header{
+        @include flex(space-between);
+    }
+    img{
+        height: 50px;
+    }
+    & .box-text{
+        color:$lightYellow;
+    }
+
+}

@@ -1,0 +1,44 @@
+main{
+    width: $widthAll;
+    height: $heightAll;
+    padding: 100px 0;
+    background-color: $darkBlue;
+    @include container;
+    .box-album{
+        @include flex($wrap:wrap);
+        & .box-item-album{
+            width: 260px;
+            height: 400px;
+            color: #fff;
+            text-align: center;
+            margin: 15px 15px;
+            padding: 20px;
+            background-color:$colorBlack;
+            @include flex($justify:flex-start, $direction:column);
+            .box-img{
+                width: $widthAll;
+                height: 200px;
+                background-color: red;
+                img{
+                    width: $widthAll;
+                    height: $heightAll;
+                }
+            }
+            .box-title{
+                width: $widthAll;
+                color: $lightGrey;
+                h2{
+                    // font-size: 1.2em;
+                }
+            }
+            .box-info{
+                width: $widthAll;
+                margin: 20px 0;
+                p{
+                    line-height: 2;
+                }
+            }
+        }
+    }
+
+}
