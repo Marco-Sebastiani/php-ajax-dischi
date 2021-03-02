@@ -8,11 +8,17 @@
 /***/ (() => {
 
 var app = new Vue({
-  el: 'app',
+  el: '#app',
   data: {
     albums: []
   },
-  mounted: function mounted() {}
+  mounted: function mounted() {
+    var _this = this;
+
+    axios.get('server.php').then(function (result) {
+      _this.albums = result.data;
+    });
+  }
 });
 
 /***/ }),
