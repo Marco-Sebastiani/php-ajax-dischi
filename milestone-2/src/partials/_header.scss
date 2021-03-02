@@ -1,0 +1,20 @@
+header{
+    width: $widthAll;
+    height: $headerHeight;
+    background-color: $darkGray;
+    position: fixed;
+    top: 0;
+    left:0;
+    z-index: 1;
+    @include container;
+    .box-header{
+        @include flex(space-between);
+    }
+    img{
+        height: 50px;
+    }
+    & .box-text{
+        color:$lightYellow;
+    }
+
+}

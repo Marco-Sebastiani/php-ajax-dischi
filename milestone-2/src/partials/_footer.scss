@@ -1,0 +1,23 @@
+footer{
+    width: $widthAll;
+    height: $footerHeight;
+    background-color: $darkGray;
+    @include container;
+
+    .#{&}-box{
+        height: $heightAll;
+        color: $lightGreen;
+        @include flex(space-between);
+        .box-left{
+            ul{
+                @include flex;
+                list-style: none;
+                li a{
+                    color: $lightGreen;
+                    margin-right: 15px;
+                    text-decoration: none;
+                }
+            }
+        }
+    }
+}

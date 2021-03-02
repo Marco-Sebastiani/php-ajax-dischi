@@ -5,9 +5,3 @@
     include __DIR__ . '/src/partials-php/main.php';
     include __DIR__ . '/src/partials-php/footer.php';
 ?>
-
-
-
-
-
-
