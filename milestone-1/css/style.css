@@ -74,14 +74,14 @@ main .box-album {
 }
 main .box-album .box-item-album {
   width: 260px;
-  height: 400px;
+  height: 420px;
   color: #fff;
   text-align: center;
   margin: 15px 15px;
   padding: 20px;
   background-color: #000;
   display: flex;
-  justify-content: flex-start;
+  justify-content: space-around;
   align-items: center;
   flex-wrap: nowrap;
   flex-direction: column;

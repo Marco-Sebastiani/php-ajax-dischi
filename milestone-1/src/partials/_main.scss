@@ -8,13 +8,13 @@ main{
         @include flex($wrap:wrap);
         & .box-item-album{
             width: 260px;
-            height: 400px;
+            height: 420px;
             color: #fff;
             text-align: center;
             margin: 15px 15px;
             padding: 20px;
             background-color:$colorBlack;
-            @include flex($justify:flex-start, $direction:column);
+            @include flex($justify:space-around, $direction:column);
             .box-img{
                 width: $widthAll;
                 height: 200px;
