@@ -17,7 +17,7 @@ var app = new Vue({
   mounted: function mounted() {
     var _this = this;
 
-    axios.get('http://localhost/marzo/01-03-21/php-ajax-dischi/milestone-2/server.php').then(function (result) {
+    axios.get('server.php').then(function (result) {
       //QUI PUSHO GLI ELEMENTI DENTRO COPERTINA
       _this.albums = result.data; //QUI CON UN CICLO FOREACH FILTRO I GENERI MUSICALI
 

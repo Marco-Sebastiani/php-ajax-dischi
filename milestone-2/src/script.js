@@ -7,7 +7,7 @@ var app = new Vue({
     },
     mounted(){
         axios
-        .get('http://localhost/marzo/01-03-21/php-ajax-dischi/milestone-2/server.php')
+        .get('server.php')
         .then(result =>{
             //QUI PUSHO GLI ELEMENTI DENTRO COPERTINA
             this.albums = result.data;
