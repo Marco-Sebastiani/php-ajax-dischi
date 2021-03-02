@@ -7,7 +7,13 @@
   \***********************/
 /***/ (() => {
 
-
+var app = new Vue({
+  el: 'app',
+  data: {
+    albums: []
+  },
+  mounted: function mounted() {}
+});
 
 /***/ }),
 
