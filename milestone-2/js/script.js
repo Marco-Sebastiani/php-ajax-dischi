@@ -10,13 +10,22 @@
 var app = new Vue({
   el: '#app',
   data: {
-    albums: []
+    albums: [],
+    genre: ['All'],
+    selected: 'All'
   },
   mounted: function mounted() {
     var _this = this;
 
     axios.get('server.php').then(function (result) {
-      _this.albums = result.data;
+      //QUI PUSHO GLI ELEMENTI DENTRO COPERTINA
+      _this.albums = result.data; //QUI CON UN CICLO FOREACH FILTRO I GENERI MUSICALI
+
+      _this.albums.forEach(function (element) {
+        if (!_this.genre.includes(element.genre)) {
+          _this.genre.push(element.genre);
+        }
+      });
     });
   }
 });

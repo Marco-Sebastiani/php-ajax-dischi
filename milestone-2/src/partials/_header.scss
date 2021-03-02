@@ -14,7 +14,16 @@ header{
         height: 50px;
     }
     & .box-text{
+        width: 40%;
         color:$lightYellow;
+        @include flex(space-around);
+    }
+    h3{
+        margin-right: 15px;
+    }
+    select{
+        width: 30%;
+        padding: 2px 5px;
     }
 
 }

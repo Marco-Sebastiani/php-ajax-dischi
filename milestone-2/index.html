@@ -17,7 +17,10 @@
                     <img src="img/logo.png" alt="">
                 </div>
                 <div class="box-text">
-                    <h3>Album musicale</h3>
+                    <h3>Seleziona il tuo genere</h3>
+                    <select v-model="selected">
+                        <option v-for="type in genre" :value="type">{{ type }}</option>
+                    </select>
                 </div>
             </div>
         </header>
@@ -26,7 +29,7 @@
             <div class="container">
                 <div class="box-album">
                     
-                    <div class="box-item-album" v-for='element in albums'>
+                    <div class="box-item-album" v-for='element in albums' v-if="selected == 'All'|| element.genre == selected">
                         <div class="box-img">
                             <img :src="element.poster" :alt="element.title">
                         </div>

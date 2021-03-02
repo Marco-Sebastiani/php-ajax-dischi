@@ -51,7 +51,20 @@ header img {
   height: 50px;
 }
 header .box-text {
+  width: 40%;
   color: #adff2f;
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex-wrap: nowrap;
+  flex-direction: row;
+}
+header h3 {
+  margin-right: 15px;
+}
+header select {
+  width: 30%;
+  padding: 2px 5px;
 }
 
 main {
@@ -74,7 +87,6 @@ main .box-album {
 }
 main .box-album .box-item-album {
   width: 260px;
-  height: 420px;
   color: #fff;
   text-align: center;
   margin: 15px 15px;
